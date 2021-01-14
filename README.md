@@ -18,4 +18,7 @@ Below is my replication ...
 
 The following are inspired by <a href="https://github.com/spicedacademy/tensor-tarragon-student-code/blob/alphan/project_week_01/life_expectancy_fertility_over_the_years_fps_hue_10_fix_legend.gif" target="_blank">Aphan's plot</a> and prepped with ```plotly_express``` -- code adopted from https://towardsdatascience.com/recreating-gapminder-animation-in-2-lines-of-python-with-plotly-express-2060c73bedec.
 
-[![name]https://rawcdn.githack.com/spicedacademy/tensor-tarragon-student-code/mmuratardag/01_14/gm_px_fert.html
+
+<a href="https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/01_14/gm_px_fert.html" target="_blank">This plotly animation shows the relationship between GDP per capita and fertility across time in three continents</a>.
+
+<a href="https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/01_14/gm_px_life.html" target="_blank">This plotly animation shows the relationship between GDP per capita and life expectancy across time in three continents</a>.

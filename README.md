@@ -18,7 +18,11 @@ Below is my replication ...
 
 The following are inspired by <a href="https://github.com/spicedacademy/tensor-tarragon-student-code/blob/alphan/project_week_01/life_expectancy_fertility_over_the_years_fps_hue_10_fix_legend.gif" target="_blank">Aphan's plot</a> and prepped with ```plotly_express``` -- code adopted from https://towardsdatascience.com/recreating-gapminder-animation-in-2-lines-of-python-with-plotly-express-2060c73bedec.
 
+The following plotly animation shows the relationship between GDP per capita and fertility across time in three continents
 
-<a href="https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/01_14/gm_px_fert.html" target="_blank">This plotly animation shows the relationship between GDP per capita and fertility across time in three continents</a>.
+[![name](https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/01_14/fert_plot.png)](https://raw.githack.com/spicedacademy/tensor-tarragon-student-code/mmuratardag/01_14/gm_px_fert.html?token=AKB7Q33GKM2YRRBKW6SVS3TABK43U)
 
-<a href="https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/01_14/gm_px_life.html" target="_blank">This plotly animation shows the relationship between GDP per capita and life expectancy across time in three continents</a>.
+
+This following plotly animation shows the relationship between GDP per capita and life expectancy across time in three continents
+
+[![name](https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/01_14/life_plot.png)](https://raw.githack.com/spicedacademy/tensor-tarragon-student-code/mmuratardag/01_14/gm_px_life.html?token=AKB7Q35TDG2JREPSX3TEIS3ABK5R6)

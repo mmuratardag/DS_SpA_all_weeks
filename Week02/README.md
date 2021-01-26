@@ -14,4 +14,4 @@ Notebook can be found <a href="https://github.com/spicedacademy/tensor-tarragon-
 - bin family size with the intervals you define yourself
 - (perhaps) add interactions using the most important features
 
-![](/01_24/titanic_kaggle_submission.png)
+![](https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/Week02/01_24/titanic_kaggle_submission.png)

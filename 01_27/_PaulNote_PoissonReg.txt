@@ -1,0 +1,5 @@
+If some of you have already run into the issue where your model is predicting negative values for some data points, this is completely normal! Why does this happen? Well, linear models are unbounded (-:infinity: <-> +:infinity:) and so it's technically possible that values can extrapolate beyond zero in the prediction after applying the solved coefficients & intercept. Of course, from a business context though, this makes no sense: We cannot have negative bicycles predicted. Here are 3 strategies on how to get around this:
+Simply replace the negative predicted values with something else (e.g. zero). e,g: y_pred[y_pred < 0] = 0.0
+Scale / transform the target column (bicycle count). Predict the log of count, for example: m.fit(Xtrain, np.log(ytrain)). Of course, then do not forget to "un-log" (i.e. np.exp()) the prediction afterwards, otherwise your model is reporting the log of the demand, which is on a different scale. Alternatively, use np.log1p() and its inverse, np.expm1().
+Use a non-linear model that doesn't extrapolate into the negative value problem, e.g. the RandomForestRegressor
+

@@ -13,7 +13,7 @@
   - gradient boosting with three other libraries -- XGBoost, LightGBM & CatBoost
 - Made two submissions to Kaggle with scores .44 (sklearn) & .49 (with LightGBM)
 
-Notebook can be found <a href="https://github.com/spicedacademy/tensor-tarragon-student-code/tree/mmuratardag/01_28" target="_blank">here</a>.
+Notebook can be found <a href="https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/Week03/01_28/project_Thu.ipynb" target="_blank">here</a>.
 
-![](https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/01_28/kaggle_score_sklearn_rf.png)
-![](https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/01_28/kaggle_score_lgbm.png)
+![](https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/Week03/01_28/kaggle_score_sklearn_rf.png)
+![](https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/Week03/01_28/kaggle_score_lgbm.png)

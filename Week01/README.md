@@ -14,7 +14,7 @@ Below is my replication ...
 
 ... and here is a static plot showing the trend of life expectancy and fertility (from early 1800s till 2015).
 
-![](https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/01_14/static_plot.png)
+![](https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/Week01/01_14/static_plot.png)
 
 The following are inspired by <a href="https://github.com/spicedacademy/tensor-tarragon-student-code/blob/alphan/project_week_01/life_expectancy_fertility_over_the_years_fps_hue_10_fix_legend.gif" target="_blank">Aphan's plot</a> and prepped with ```plotly_express``` -- code adopted from https://towardsdatascience.com/recreating-gapminder-animation-in-2-lines-of-python-with-plotly-express-2060c73bedec.
 

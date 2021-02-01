@@ -20,9 +20,9 @@ The following are inspired by <a href="https://github.com/spicedacademy/tensor-t
 
 The following plotly animation shows the relationship between GDP per capita and fertility across time in three continents
 
-[![name](https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/Week01/01_14/fert_plot.png)](https://raw.githack.com/spicedacademy/tensor-tarragon-student-code/mmuratardag/01_14/gm_px_fert.html?token=AKB7Q33GKM2YRRBKW6SVS3TABK43U)
+[![]()
 
 
 This following plotly animation shows the relationship between GDP per capita and life expectancy across time in three continents
 
-[![name](https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/Week01/01_14/life_plot.png)](https://raw.githack.com/spicedacademy/tensor-tarragon-student-code/mmuratardag/01_14/gm_px_life.html?token=AKB7Q35TDG2JREPSX3TEIS3ABK5R6)
+[![]()

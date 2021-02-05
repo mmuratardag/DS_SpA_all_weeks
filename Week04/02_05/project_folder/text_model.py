@@ -57,9 +57,6 @@ LABELS = list(corpus_df['genre'])
 
 LABELS = LABELS
 
-# initialize vectorizer and fit transform it
-# vectoriser = TfidfVectorizer(token_pattern=r'[a-z]+', stop_words='english', min_df=10, max_df=.97)
-# X = vectoriser.fit_transform(CORPUS)
 
 def train_model(text, labels, max_depth):
     """
@@ -70,8 +67,8 @@ def train_model(text, labels, max_depth):
     print('\nTraining model...')
     #cv = CountVectorizer(stop_words='english')
     tf = TfidfVectorizer(token_pattern=r'[a-z]+', stop_words='english', min_df=10, max_df=.97)
-    rf = RandomForestClassifier(max_depth=5)
-    model = make_pipeline(rf)
+    rf = RandomForestClassifier(max_depth=20, random_state=666, n_jobs=-1)
+    model = make_pipeline(tf, rf)
     model.fit(text, labels)
     print('...and done!\n')
     return model

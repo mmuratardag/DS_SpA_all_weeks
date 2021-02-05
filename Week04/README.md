@@ -18,9 +18,9 @@
 - Relied on tf-idf for getting the dfm
 - Trained a model with RandomForestClassifier
 
-See the project folder <a href="" target="_blank">here</a> to get the trained model and use it for prediction with CLI.
+See the project folder <a href="https://github.com/spicedacademy/tensor-tarragon-student-code/tree/mmuratardag/Week04/02_05/project_folder" target="_blank">here</a> to get the trained model and use it for prediction with CLI.
 
-![](CLI_screen-shot.png)
+![](https://github.com/spicedacademy/tensor-tarragon-student-code/blob/mmuratardag/Week04/02_05/project_folder/CLI_screen-shot.png)
 
 ### TO-DO
 

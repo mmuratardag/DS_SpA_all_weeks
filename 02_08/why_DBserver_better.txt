@@ -1,0 +1,5 @@
+Why using a DB Server (like PostGres) is better than using a "simple database" like a CSV file:
+1. Can handle data in much larger quantities. PostGres is compressing your data into binary format for you behind the scenes so it is super compact / light.
+2. Querying is much faster. PostGres is written in C, which is a very fast language. Also don't need to waste time opening / closing files like you do with CSV files. With 3. 3. Database servers you can also do fancy stuff like creating indices for quicker querying.
+4. DB Servers can be hosted anywhere. You can set up a DB server in the cloud so that multiple people can connect to it simultaneously.
+5. DB Servers provide an interface for user management. For example you can create different usernames / accounts, and give different users different privileges / permissions.

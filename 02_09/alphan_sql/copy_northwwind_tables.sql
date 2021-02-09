@@ -1,0 +1,11 @@
+\copy products (productID, productName, supplierID, categoryID, quantityPerUnit, unitPrice, unitsInStock, unitsOnOrder, reorderLevel, discontinued) FROM './data/csvs/products.csv' DELIMITER ',' CSV HEADER;
+\copy territories (territoryID, territoryDescription, regionID) FROM './data/csvs/territories.csv' DELIMITER ',' CSV HEADER;
+\copy customers (customerID, companyName, contactName, contactTitle, address, city, region, postalCode, country, phone, fax) FROM './data/csvs/customers.csv' DELIMITER ',' CSV HEADER;
+\copy shippers (shipperID, companyName, phone) FROM './data/csvs/shippers.csv' DELIMITER ',' CSV HEADER;
+\copy order_details (orderID, productID, unitPrice, quantity, discount) FROM './data/csvs/order_details.csv' DELIMITER ',' CSV HEADER;
+\copy employees (employeeID, lastName, firstName, title, titleOfCourtesy, birthDate, hireDate, address, city, region, postalCode, country, homePhone, extension, photo, notes, reportsTo, photoPath) FROM './data/csvs/employees.csv' DELIMITER ',' NULL AS 'NULL' CSV HEADER;
+\copy suppliers (supplierID, companyName, contactName, contactTitle, address, city, region, postalCode, country, phone, fax, homePage) FROM './data/csvs/suppliers.csv' DELIMITER ',' CSV HEADER;
+\copy orders (orderID, customerID, employeeID, orderDate, requiredDate, shippedDate, shipVia, freight, shipName, shipAddress, shipCity, shipRegion, shipPostalCode, shipCountry) FROM './data/csvs/orders.csv' DELIMITER ',' CSV HEADER NULL AS 'NULL';
+\copy employee_territories (employeeID, territoryID) FROM './data/csvs/employee_territories.csv' DELIMITER ',' CSV HEADER;
+\copy categories (categoryID, categoryName, description, picture) FROM './data/csvs/categories.csv' DELIMITER ',' CSV HEADER;
+\copy regions (regionID, regionDescription) FROM './data/csvs/regions.csv' DELIMITER ',' CSV HEADER;

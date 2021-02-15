@@ -1,9 +1,0 @@
-Commands we used today:
-if you use input(), you can give a description inside the brackets and this will prompt you to type in the text in the terminal.
-When using argparse, there are two options:
-if you have positional arguments, then just give them in the order that you added them to your parser. They are required.
-if you are using flags (--t, -text) which makes the arguments optional: prefix the argument  when you give it in the terminal with the appropriate flag.
-E.g:
-Positional: python main.py "Waterloo honey dance" 5
-Optional: python main.py -text "Waterloo honey dance" -max_depth 5
-You can also have positional AND optional arguments.

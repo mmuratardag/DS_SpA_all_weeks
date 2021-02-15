@@ -1,0 +1,11 @@
+DROP TABLE products;
+DROP TABLE territories;
+DROP TABLE customers;
+DROP TABLE shippers;
+DROP TABLE order_details;
+DROP TABLE employees;
+DROP TABLE suppliers;
+DROP TABLE orders;
+DROP TABLE employee_territories;
+DROP TABLE categories;
+DROP TABLE regions;

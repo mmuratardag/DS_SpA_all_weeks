@@ -1,0 +1,28 @@
+
+touch Dockerfile # create an empty file with no extension
+
+docker build . # build the docker file in the same directory
+
+docker images # display the docker images
+
+docker run ubuntu # runs the created image
+
+docker ps # lists containers
+
+docker run -it ubuntu # create a connection to the created ubuntu image and maintains it
+# try stuff like pwd ls
+touch hi.py # will create a file but will be gone after exit 
+
+
+docker run -it -v $PWD:/mnt ubuntu # migrates files from the local machine
+# try stuff like ls
+
+docker run -it -d ubuntu # keeps running the container in the background
+docker stop 27bf44dced7f # will stop the running container 27bf44dced7f is the id you get after docker ps
+
+docker run -d -it --name spiced python:3.6-slim # downloaded from docker hub ubuntu with python, we call it spiced
+docker stop 53854dc05685
+
+docker attach spiced # gets us inside the python shell inside ubuntu
+
+docker exec -it spiced2 bash

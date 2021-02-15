@@ -1,5 +1,0 @@
-Example of final demos (what you can achieve by this Friday):
-Northwind dashboard (Metabase) from a former student: https://github.com/lorenanda/northwind-dashboard
-Corona dashboard (Metabase) from a former student: https://github.com/DariusTorabian/corona-dashboard
-The second repo has a link to his live dashboard , but it doesn't seem to be working atm. I assume he shut down his AWS server since he doesn't need it running anymore
-Bonus: Dashboard of Northwind data made with Tableau: https://public.tableau.com/profile/hao5230#!/vizhome/Northwinddataset/Dashboard1 (edited) 

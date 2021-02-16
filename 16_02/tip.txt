@@ -1,0 +1,3 @@
+ **TIP**: You can also run your entire pipeline in the background by running `docker-compose up -d` if you already know it's working and you don't want to flood your terminal with log messages. However, if you do that, then don't forget to stop the containers eventually! i.e. `docker-compose stop`
+
+- all your containers can be started again later with `docker-compose start`

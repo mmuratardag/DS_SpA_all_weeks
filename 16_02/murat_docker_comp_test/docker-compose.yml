@@ -1,0 +1,43 @@
+# central file in a docker compose pipeline
+# defines the containers of the pipeline and some environment variables configuration info
+
+version: '3' # docker-compose version
+
+services: # each service is a container
+
+# 1st container
+  tweet_collector: # name of the service
+    build: tweet_collector/ # build the container using a docker image definition that is in the directory tweet_collector
+    volumes: # creates a sync between ur local dir with the container dir app
+    - ./tweet_collector/:/app
+    depends_on: # since this depends on MongoDB, it needs to start the app -- MongoDB has to be up & running
+    - mongodb
+    environment:
+    - TWT_API_KEY=${TWT_API_KEY}
+    - TWT_API_SECRET=${TWT_API_SECRET}
+    - TWT_ACCESS_TOKEN=${TWT_ACCESS_TOKEN}
+    - TWT_ACCESS_TOKEN_SECRET=${TWT_ACCESS_TOKEN_SECRET}
+
+# 2nd container
+  mongodb: # name of the service
+    image: mongo # pre-defined image to be dw from docker-hub
+    ports: # define port of the MongoDB from local machine to and inside of container -->  local_machine:inside_of container
+    - 27017:27017 # although this is not crucial/essential here, good practice to define this
+
+# 3rd container
+#  etl_job: ...
+
+# 4th container
+#  postgres: ...
+
+# 5th container
+#  slack_bot
+
+##########################################
+##########################################
+# from the terminal docker-compose build
+# docker-compose up will keep it running
+# docker-compose ps in the same dir
+# docker ps from anywhere
+# you can always stop with CTRL C or 
+# docker-compose logs name of the working dir.

@@ -1,0 +1,191 @@
+CRITICAL:root:-----Tweet written into MongoDB-----
+tweet_collector.py:29: DeprecationWarning: insert is deprecated. Use insert_one or insert_many instead.
+  collection.insert(tweet) #equivalent of INSERT INTO tweet_data VALUES (....);
+CRITICAL:root:2021-02-16 16:24:36.293884
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-16 16:24:39.300833
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-16 16:24:42.306053
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-16 16:24:45.310674
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-16 16:24:48.316411
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-16 16:24:51.321439
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+tweet_collector.py:29: DeprecationWarning: insert is deprecated. Use insert_one or insert_many instead.
+  collection.insert(tweet) #equivalent of INSERT INTO tweet_data VALUES (....);
+CRITICAL:root:2021-02-16 16:28:30.753332
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-16 16:28:33.759833
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-16 16:28:36.765450
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-16 16:28:39.772240
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-16 16:28:42.778215
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+tweet_collector.py:29: DeprecationWarning: insert is deprecated. Use insert_one or insert_many instead.
+  collection.insert(tweet) #equivalent of INSERT INTO tweet_data VALUES (....);
+CRITICAL:root:2021-02-17 09:26:16.245050
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 09:26:19.251830
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 09:26:22.254801
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 09:26:25.260278
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 09:26:28.267469
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+tweet_collector.py:29: DeprecationWarning: insert is deprecated. Use insert_one or insert_many instead.
+  collection.insert(tweet) #equivalent of INSERT INTO tweet_data VALUES (....);
+CRITICAL:root:2021-02-17 12:34:37.483533
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 12:34:40.489487
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 12:34:43.495590
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 12:34:46.500901
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 12:34:49.509467
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 12:34:52.516367
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 12:34:55.522181
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 12:34:58.527007
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 12:35:01.532251
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+tweet_collector.py:29: DeprecationWarning: insert is deprecated. Use insert_one or insert_many instead.
+  collection.insert(tweet) #equivalent of INSERT INTO tweet_data VALUES (....);
+CRITICAL:root:2021-02-17 12:37:03.056292
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 12:37:06.063508
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 12:37:09.068919
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 12:37:12.078833
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 12:37:15.085277
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+CRITICAL:root:2021-02-17 12:37:18.090921
+CRITICAL:root:----------
+
+CRITICAL:root:-----Tweet written into MongoDB-----
+tweet_collector.py:29: DeprecationWarning: insert is deprecated. Use insert_one or insert_many instead.
+  collection.insert(tweet) #equivalent of INSERT INTO tweet_data VALUES (....);
+Traceback (most recent call last):
+  File "tweet_collector.py", line 29, in <module>
+    collection.insert(tweet) #equivalent of INSERT INTO tweet_data VALUES (....);
+  File "/usr/local/lib/python3.8/site-packages/pymongo/collection.py", line 3293, in insert
+    return self._insert(doc_or_docs, not continue_on_error,
+  File "/usr/local/lib/python3.8/site-packages/pymongo/collection.py", line 613, in _insert
+    return self._insert_one(
+  File "/usr/local/lib/python3.8/site-packages/pymongo/collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "/usr/local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/local/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/usr/local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/usr/local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/usr/local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/usr/local/lib/python3.8/site-packages/pymongo/topology.py", line 485, in get_server_session
+    self._select_servers_loop(
+  File "/usr/local/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: mongod:27017: [Errno -2] Name or service not known, Timeout: 30s, Topology Description: <TopologyDescription id: 602d132606071099a28d6159, topology_type: Single, servers: [<ServerDescription ('mongod', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongod:27017: [Errno -2] Name or service not known')>]>
+tweet_collector.py:33: DeprecationWarning: insert is deprecated. Use insert_one or insert_many instead.
+  collection.insert(tweet) #equivalent of INSERT INTO tweet_data VALUES (....);
+Traceback (most recent call last):
+  File "tweet_collector.py", line 33, in <module>
+    collection.insert(tweet) #equivalent of INSERT INTO tweet_data VALUES (....);
+  File "/usr/local/lib/python3.8/site-packages/pymongo/collection.py", line 3293, in insert
+    return self._insert(doc_or_docs, not continue_on_error,
+  File "/usr/local/lib/python3.8/site-packages/pymongo/collection.py", line 613, in _insert
+    return self._insert_one(
+  File "/usr/local/lib/python3.8/site-packages/pymongo/collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "/usr/local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/local/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/usr/local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/usr/local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/usr/local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/usr/local/lib/python3.8/site-packages/pymongo/topology.py", line 485, in get_server_session
+    self._select_servers_loop(
+  File "/usr/local/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: mongod:27017: [Errno -2] Name or service not known, Timeout: 30s, Topology Description: <TopologyDescription id: 602d149587db204842f10f90, topology_type: Single, servers: [<ServerDescription ('mongod', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongod:27017: [Errno -2] Name or service not known')>]>

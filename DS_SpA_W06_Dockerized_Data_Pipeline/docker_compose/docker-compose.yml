@@ -1,0 +1,62 @@
+# central file in a docker compose pipeline
+# defines the containers of the pipeline and some environment variables configuration info
+
+version: '3' # 
+
+services: # 
+
+# 1st container
+  tweet_collector: #
+    container_name: tweet_collector
+    build: tweet_collector/ # 
+    volumes: # 
+    - ./tweet_collector/:/app
+    depends_on: # 
+    - mongodb
+    environment:
+    - TWT_API_KEY=${TWT_API_KEY}
+    - TWT_API_SECRET=${TWT_API_SECRET}
+    - TWT_ACCESS_TOKEN=${TWT_ACCESS_TOKEN}
+    - TWT_ACCESS_TOKEN_SECRET=${TWT_ACCESS_TOKEN_SECRET}
+
+# 2nd container
+  mongodb: #
+    container_name: mongodb
+    image: mongo # 
+    ports: # 
+    - 27017:27017 # 
+
+# 3rd container
+  etl_job:
+    container_name: etl_job
+    build: etl_job/
+    volumes: # 
+    - ./etl_job/:/app
+    depends_on:
+    - mongodb
+    - postgresdb
+
+# 4th container
+  postgresdb:
+    container_name: postgresdb
+    image: postgres
+    ports:
+    - "5555:5432"
+    environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=postgres
+    - POSTGRES_DB=twitter_stream
+
+# 5th container
+  slack_bot:
+    container_name: slack_bot
+    build: slackbot/
+    volumes:
+    - ./slackbot/:/app
+    depends_on:
+    - postgresdb
+    environment:
+    - WEBHOOK_URL=${WEBHOOK_URL}
+
+
+# psql -U postgres -h 0.0.0.0 -p 5555 twitter_stream

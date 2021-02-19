@@ -6,7 +6,7 @@ This project was completed in week 6 of the Data Science Bootcamp at Spiced Acad
 
 ![pipeline](structure.png)
 
-This is a simple implementation of a dockerized data pipeline that sends randomized tweets about politics together with the sentiment scores.
+This is a simple implementation of a dockerized data pipeline that sends randomized tweets about politics together with their sentiment scores.
 
 The Docker-Compose pipeline includes five containers. With the following folder structure the data pipeline...
 ![FolderTree](fol_str_tre.png)

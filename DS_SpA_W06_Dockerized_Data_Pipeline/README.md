@@ -4,7 +4,7 @@
 
 This project was completed in week 6 of the Data Science Bootcamp at Spiced Academy in Berlin.
 
-![pipeline](structure.svg)
+![pipeline](structure.png)
 
 This is a simple implementation of a dockerized data pipeline that sends randomized tweets about politics together with the sentiment scores.
 

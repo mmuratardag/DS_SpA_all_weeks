@@ -131,6 +131,15 @@ dmypy.json
 #MacOS
 .DS_Store
 
-#Large files 
+#Large files
 .jar
 .csv
+
+# specific files
+ECA_blended_custom.zip
+elements.txt
+metadata.txt
+sources.txt
+stations.txt
+TG_STAID004570.txt
+TS_data.txt

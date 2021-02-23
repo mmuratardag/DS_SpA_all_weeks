@@ -135,6 +135,9 @@ dmypy.json
 .jar
 .csv
 
+# R stuff
+.Rhistory
+
 # specific files
 ECA_blended_custom.zip
 elements.txt

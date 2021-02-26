@@ -56,13 +56,6 @@ def make_forecast_with_prophet(df):
 
 
 Charlottenburg_Wilmersdorf_forecast = make_forecast_with_prophet(Charlottenburg_Wilmersdorf)
-"""
-Friedrichshain_Kreuzberg is problematic due to missing dates in the data frame -- the forecast can be done until 1981, which is ridiculous...
-for the sake of completing the project, I'm just going to replicate
-Charlottenburg_Wilmersdorf_forecast
-as if it's
-Friedrichshain_Kreuzberg
-"""
 Friedrichshain_Kreuzberg_forecast = make_forecast_with_prophet(Friedrichshain_Kreuzberg)
 Lichtenberg_forecast = make_forecast_with_prophet(Lichtenberg)
 Marzahn_Hellersdorf_forecast = make_forecast_with_prophet(Marzahn_Hellersdorf)

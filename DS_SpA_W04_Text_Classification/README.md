@@ -30,3 +30,9 @@ Below is a screen capture of the CLI.
 ### TO-DO
 
 - Maybe collect more data and turn the project into a little fun web-application in the long run.
+
+## Acknowledgements
+
+The ```scrapy``` script is kindly provided by  [Paul Wlodkowski](https://github.com/pawlodkowski) and is probably adopted from the repo [here](https://github.com/pawlodkowski/lyrics_scraper).
+
+

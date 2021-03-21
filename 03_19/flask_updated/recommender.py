@@ -36,6 +36,11 @@ def get_rating_from_user(user_input: dict):
 
     return random.choice(list(user_input.keys()))
 
+def get_user_input(user_input):
+    obtained_user_input = user_input
+    user_input_df = pd.DataFrame(obtained_user_input)
+    return user_input_df
+
 
 if __name__ == "__main__":
     """good place for test code"""

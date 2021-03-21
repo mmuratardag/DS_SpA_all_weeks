@@ -50,6 +50,11 @@ def simple_recommender(movie1, movie2, movie3):
 
     return make_response(jsonify(data))
 
+#@app.route("/test")
+#def test_get_user():
+#    test_user_input_df = get_user_input()
+#    print(test_user_input_df)
+
 
 if __name__ == "__main__":
     # this block is executed when we run application.py, not when we import it

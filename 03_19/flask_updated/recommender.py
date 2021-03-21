@@ -3,6 +3,8 @@
 import random
 import pandas as pd
 
+from surprise import dump
+
 df = pd.read_csv('movie_titles_df.csv')
 
 MOVIES = list(df['title_only'])
@@ -36,10 +38,18 @@ def get_rating_from_user(user_input: dict):
 
     return random.choice(list(user_input.keys()))
 
-def get_user_input(user_input):
-    obtained_user_input = user_input
-    user_input_df = pd.DataFrame(obtained_user_input)
-    return user_input_df
+
+def load_pre_trained_model():
+    trained_model = dump.load(file_name = "surprise_pickle")
+    return trained_model
+
+
+def get_convert_user_input(user_input):
+    user_input_df = pd.DataFrame(user_input, index = ["rating"]).T.reset_index()
+    user_input_df_change_col_names = user_input_df.rename(columns={"index": "title"})
+    return user_input_df_change_col_names
+
+#test_df_var = get_convert_user_input()
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 from flask import Flask, render_template, make_response, jsonify, request
-from recommender import MOVIES, get_rating_from_user, get_three_random_recommendations, get_nine_random_recommendations
+from recommender import MOVIES, get_rating_from_user, get_three_random_recommendations, get_nine_random_recommendations, get_convert_user_input
 
 
 app = Flask(__name__)
@@ -15,7 +15,10 @@ def recommend():
     ### THIS IS THE DATA THAT WAS ASSEMBLED BY THE FORM!!!
     print(user_input)
     movie = get_rating_from_user(user_input)
-    return render_template("recommendation.html", movie = movie, message="Hello World")
+    test_df_var = get_convert_user_input(user_input)
+    #test_df_var = str(test_df_var)
+    test_df_var = print(test_df_var.to_string())
+    return render_template("recommendation.html", movie = movie, message="test message", test_df_var = test_df_var)
 
 
 @app.route("/")
@@ -23,15 +26,15 @@ def main_page():
     return render_template("main_page.html", random3 = random3, random9_2b_rated = random9_2b_rated)
 
 
-@app.route("/all")
-def all_movies():
-    data = {"movies": MOVIES}
-    return make_response(jsonify(data))
+#@app.route("/all")
+#def all_movies():
+#    data = {"movies": MOVIES}
+#    return make_response(jsonify(data))
 
 
-@app.route("/greet/<name>")
-def hello(name):
-    return f"Hello, {name}"
+#@app.route("/greet/<name>")
+#def hello(name):
+#    return f"Hello, {name}"
 
 
 @app.route("/api/<movie1>&<movie2>&<movie3>")

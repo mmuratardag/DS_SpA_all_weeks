@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>Tensor Tarragon Movies</title>
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+    
+        <meta name="Keywords" content="nmf, collaborative filtering, cosim">
+        <meta name="Description" content="Spiced movie recommender">    
+        <meta name="Distribution" content="Global">
+        <meta name="Robots" content="index,follow">
+        <meta name="author" content="Dr. Kristian Rother, Paul Wlodkowski">
+    
+        <link rel="stylesheet" href="/static/style.css">
+    
+    </head>
+    <body>
+
+      <div class="header">
+        <h1>Welcome to the Tensor Tarragon Movie Recommender</h1>
+      </div>
+
+      <div class="content">
+
+        <img src="/static/jedi.png" style="width: 200px; height: 200px">
+        <a href="/static/test.txt">click here for hello world text file</a>
+
+        <p>
+            Please enter your favorite movies and their ratings.
+        </p>
+
+        <form action="/recommender">
+
+            <input type="text" name="movie1" placeholder="Enter first movie...">
+            <input type="text" name="rating1" placeholder="Enter first rating..."><br>
+
+            <input type="text" name="movie2" placeholder="Enter second movie...">
+            <input type="text" name="rating2" placeholder="Enter second rating..."><br>
+
+            <input type="text" name="movie3" placeholder="Enter third movie...">
+            <input type="text" name="rating3" placeholder="Enter third rating..."><br>
+
+            <br>
+            <input type="submit" value="Submit">
+
+        </form>
+      </div>
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<a href="/recommender">[ click here ]</a>

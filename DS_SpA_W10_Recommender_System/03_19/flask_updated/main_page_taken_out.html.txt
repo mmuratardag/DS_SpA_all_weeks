@@ -1,0 +1,71 @@
+​            <!-- <tr>
+
+​              <td>{{random9_2b_rated[0]}}</td>
+
+​              <td><input type="text" name="{{random9_2b_rated[0]}}" placeholder="Enter first rating..."></td>
+
+​            </tr>
+
+​            <tr>
+
+​              <td>{{random9_2b_rated[1]}}</td>
+
+​              <td><input type="text" name="{{random9_2b_rated[1]}}" placeholder="Enter second rating..."></td>
+
+​            </tr>
+
+​            <tr>
+
+​              <td>{{random9_2b_rated[2]}}</td>
+
+​              <td><input type="text" name="rating3" placeholder="Enter third rating..."></td>
+
+​            </tr>
+
+​            <tr>
+
+​              <td>{{random9_2b_rated[3]}}</td>
+
+​              <td><input type="text" name="rating4" placeholder="Enter fourth rating..."></td>
+
+​            </tr>
+
+​            <tr>
+
+​              <td>{{random9_2b_rated[4]}}</td>
+
+​              <td><input type="text" name="rating5" placeholder="Enter fifth rating..."></td>
+
+​            </tr>
+
+​            <tr>
+
+​              <td>{{random9_2b_rated[5]}}</td>
+
+​              <td><input type="text" name="rating6" placeholder="Enter sixth rating..."></td>
+
+​            </tr>
+
+​            <tr>
+
+​              <td>{{random9_2b_rated[6]}}</td>
+
+​              <td><input type="text" name="rating7" placeholder="Enter seventh rating..."></td>
+
+​            </tr>
+
+​            <tr>
+
+​              <td>{{random9_2b_rated[7]}}</td>
+
+​              <td><input type="text" name="rating8" placeholder="Enter eight rating..."></td>
+
+​            </tr>
+
+​            <tr>
+
+​              <td>{{random9_2b_rated[8]}}</td>
+
+​              <td><input type="text" name="rating9" placeholder="Enter nineth rating..."></td>
+
+​            </tr> -->

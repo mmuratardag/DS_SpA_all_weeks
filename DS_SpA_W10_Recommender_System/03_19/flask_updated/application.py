@@ -17,24 +17,14 @@ def recommend():
     movie = get_rating_from_user(user_input)
     test_df_var = get_convert_user_input(user_input)
     #test_df_var = str(test_df_var)
-    test_df_var = print(test_df_var.to_string())
-    return render_template("recommendation.html", movie = movie, message="test message", test_df_var = test_df_var)
+    test_df_var = print(test_df_var)
+    return render_template("recommendation.html", movie = movie, message="test message", test_df_var= test_df_var)
 
 
 @app.route("/")
 def main_page():
-    return render_template("main_page.html", random3 = random3, random9_2b_rated = random9_2b_rated)
+    return render_template("index.html", random3 = random3, random9_2b_rated = random9_2b_rated)
 
-
-#@app.route("/all")
-#def all_movies():
-#    data = {"movies": MOVIES}
-#    return make_response(jsonify(data))
-
-
-#@app.route("/greet/<name>")
-#def hello(name):
-#    return f"Hello, {name}"
 
 
 @app.route("/api/<movie1>&<movie2>&<movie3>")
@@ -52,11 +42,6 @@ def simple_recommender(movie1, movie2, movie3):
     }
 
     return make_response(jsonify(data))
-
-#@app.route("/test")
-#def test_get_user():
-#    test_user_input_df = get_user_input()
-#    print(test_user_input_df)
 
 
 if __name__ == "__main__":

@@ -45,11 +45,11 @@ def load_pre_trained_model():
 
 
 def get_convert_user_input(user_input):
-    user_input_df = pd.DataFrame(user_input, index = ["rating"]).T.reset_index()
-    user_input_df_change_col_names = user_input_df.rename(columns={"index": "title"})
-    return user_input_df_change_col_names
+    input_list = list(user_input.items())
+    #user_input_df = pd.DataFrame(user_input, index = ["rating"]).T.reset_index()
+    #user_input_df_change_col_names = user_input_df.rename(columns={"index": "title"})
+    return input_list
 
-#test_df_var = get_convert_user_input()
 
 
 if __name__ == "__main__":

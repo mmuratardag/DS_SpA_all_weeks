@@ -39,9 +39,9 @@ def get_rating_from_user(user_input: dict):
     return random.choice(list(user_input.keys()))
 
 
-def load_pre_trained_model():
-    trained_model = dump.load(file_name = "surprise_pickle")
-    return trained_model
+#def load_pre_trained_model():
+#    trained_model = dump.load(file_name = "surprise_pickle")
+#    return trained_model
 
 
 def get_convert_user_input(user_input):

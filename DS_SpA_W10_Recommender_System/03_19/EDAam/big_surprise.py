@@ -83,5 +83,5 @@ def big_surprise(user_input):
         idx = mdf[mdf.movieId==element].index.tolist()[0]
         movie_title_list.append(mdf.iloc[idx].title_only)
     
-    return movie_title_list
+    return print(*movie_title_list, sep='\n')
 

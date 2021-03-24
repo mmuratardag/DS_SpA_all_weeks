@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import random
 import pandas as pd
 
@@ -27,9 +25,7 @@ def get_rating_from_user(user_input: dict):
        2. Process the input, e.g. convert movie titles into numbers: movie title -> column numbers
        3. Data validation, e.g. spell check....
        4. Convert the user input into an array of length len(df.columns), ~9742
-
        --here is where the cosine similarity will be a bit different--
-
        5. user_profile = nmf.transform(user_array). The "hidden feature profile" of the user, e.g. (9742, 20)
        6. results = np.dot(user_profile, nmf.components_)
        7. Sort the array, map the top N values to movie names.

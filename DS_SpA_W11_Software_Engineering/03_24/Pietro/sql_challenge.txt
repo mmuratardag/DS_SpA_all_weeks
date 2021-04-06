@@ -1,0 +1,139 @@
+(base) pit@pit-X555UJ:~$ psql -h "recap.cgn1yvegh1gq.eu-central-1.rds.amazonaws.com" -U postgres -d postgres -p 5432 
+Password for user postgres: 
+psql (12.6 (Ubuntu 12.6-0ubuntu0.20.04.1), server 12.5)
+SSL connection (protocol: TLSv1.2, cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off)
+Type "help" for help.
+postgres=> \dt
+           List of relations
+ Schema |   Name    | Type  |  Owner   
+--------+-----------+-------+----------
+ public | blabla    | table | postgres
+ public | elevator  | table | postgres
+ public | movies    | table | postgres
+ public | new       | table | postgres
+ public | new_movie | table | postgres
+ public | ratings   | table | postgres
+ public | task1     | table | postgres
+ public | task4     | table | postgres
+(8 rows)
+postgres=> select * from ratings;
+postgres=> select title, count(rating)
+postgres-> from ratings
+postgres-> inner join movies on movies.movie_id = ratings.movie_id
+postgres-> group by title,ratings.movie_id 
+postgres-> order by count(ratings) desc;
+postgres=> select concat(first_name,' ', last_name) as person_name
+postgres-> position
+postgres-> sum(weight) over(order by position) as running_total
+postgres-> from elevator
+postgres-> having running_total <= 1000 and lead(running_total) > 1000;
+ERROR:  syntax error at or near "position"
+LINE 2: position
+        ^
+postgres=> 
+postgres=> 
+postgres=> ;
+postgres=> select * from (
+postgres(> ;
+postgres(> ratings;
+postgres(> exit
+Use \q to quit.
+postgres(> \q
+(base) pit@pit-X555UJ:~$ psql -h "recap.cgn1yvegh1gq.eu-central-1.rds.amazonaws.com" -U postgres -d postgres -p 5432 
+Password for user postgres: 
+psql (12.6 (Ubuntu 12.6-0ubuntu0.20.04.1), server 12.5)
+SSL connection (protocol: TLSv1.2, cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off)
+Type "help" for help.
+postgres=> \dt
+           List of relations
+ Schema |   Name    | Type  |  Owner   
+--------+-----------+-------+----------
+ public | blabla    | table | postgres
+ public | elevator  | table | postgres
+ public | movies    | table | postgres
+ public | new       | table | postgres
+ public | new_movie | table | postgres
+ public | ratings   | table | postgres
+ public | task1     | table | postgres
+ public | task42    | table | postgres
+ public | task4_2   | table | postgres
+(9 rows)
+postgres=> select * from ( 
+postgres(> select concat(first_name,' ', last_name) as person_name
+postgres(> position
+postgres(> sum(weight) over(order by position) as running_total
+postgres(> fromelevator
+postgres(> )
+postgres-> as sub_query
+postgres-> where running_total < 1000
+postgres-> order by position desc limit 1;
+ERROR:  syntax error at or near "position"
+LINE 3: position
+        ^
+postgres=> select * from ( 
+select concat(first_name,' ', last_name) as person_name
+positio, 
+sum(weight) over(order by position) as running_total
+fromelevator
+)
+as sub_query
+where running_total < 1000
+order by position desc limit 1;
+ERROR:  syntax error at or near "positio"
+LINE 3: positio,
+        ^
+postgres=> select * from ( 
+select concat(first_name,' ', last_name) as person_name
+position,
+sum(weight) over(order by position) as running_total
+fromelevator
+)
+as sub_query
+where running_total < 1000
+order by position desc limit 1;
+ERROR:  syntax error at or near "position"
+LINE 3: position,
+        ^
+postgres=> select * from ( 
+select concat(first_name,' ', last_name) as person_name
+position
+sum(weight) over(order by position) as running_total
+fromelevator
+)
+as sub_query
+where running_total < 1000
+order by position desc limit 1;
+ERROR:  syntax error at or near "position"
+LINE 3: position
+        ^
+postgres=> 
+postgres=> select * from ( 
+select concat(first_name,' ', last_name) as person_name,
+position,
+sum(weight) over(order by position) as running_total
+fromelevator
+)
+as sub_query
+where running_total < 1000
+order by position desc limit 1;
+ERROR:  syntax error at or near "fromelevator"
+LINE 5: fromelevator
+        ^
+postgres=> select * from ( 
+select concat(first_name,' ', last_name) as person_name,
+position,
+sum(weight) over(order by position) as running_total
+from elevator
+)
+as sub_query
+where running_total < 1000
+order by position desc limit 1;
+    person_name     | position | running_total 
+--------------------+----------+---------------
+ Christina Peterson |        6 |           935
+(1 row)
+postgres=> ^C
+postgres=> select * from ratings;
+postgres=> ^C
+postgres=> 
+
